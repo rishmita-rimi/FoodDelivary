@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Site</title>
+  <link rel="stylesheet" href="style.css"/>
+  
+    <link 
+    rel={"stylesheet" href="style.css"}/>
+    
+</head>
+<body>
+  <header>
+    <h1>Food Delivery Site</h1>
+    <!-- Add your navigation menu here -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Rate Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Welcome to our Food Delivery Service!</h2>
+      <p>"Welcome to Combo Express! We take pride in delivering not just meals, but moments of pure culinary bliss. Experience the perfect blend of taste, quality, and convenience as we bring the best flavors from our kitchen straight to your doorstep.Here are some best-selling combos from our kitchen."</p>
+    </section>
+    
+    <section>
+      <h1>Menu</h1>
+      <!-- Add your menu items here -->
+      <div>
+        <h3>Momo Magic</h3>
+        <p>4 pcs Steam 4 pcs Fried 4 pcs Barbique</p>
+        <p>Combination of all types of momos with chutney & mayonise </p>
+        <p>Available in Veg & non-veg</p>
+        <p>Price: 200 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+      
+      <div>
+        <h3>Noodle Mania</h3>
+        <p>Hakka Noodles served with Chilli Chicken/Chilli Paneer</p>
+        <p></p>A delicious combination of noodles with gravvy items</p> 
+        <p>Available in Veg & non-veg</p>
+        <p>Price: 220 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+      
+      <div>
+        <h3>Blessed with Burger</h3>
+        <p>Burger served with french fries & Mocktail.</p>
+        <p>Crispy patty in between breads with crispy fries & cold mocktails of various flavors</p>
+        <p>Available in Veg & non-veg</p>
+        <p>Price: 160 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div>
+        <h3>Pagal for Pizza</h3>
+        <p>Cheesy pizza served  with coke </p>
+        <p>Various types of topings on pizza served with fizz of coke</p>
+        <p>Available in both veg & non-veg</p>
+        <p>Price: 250 Rs</p>
+        <button>Add to Cart</button>
+      </div>
+      <div>
+        <h3>Item 5</h3>
+        <p>Description of item 5.</p>
+        <p>Price: $8.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Order</h2>
+      <!-- Add your order form here -->
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Contact</h2>
+      <!-- Add your contact information here -->
+      <p>Email: example@example.com</p>
+      <p>Phone: 123-456-7890</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Combo Express. All rights reserved.</p>
+  </footer>
+  <script>
+    // Function to handle form submission
+function handleFormSubmit(event) {
+  event.preventDefault();
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const address = document.getElementById('address').value;
+
+  // Perform validation (you can add your own validation logic here)
+  if (name.trim() === '' || email.trim() === '' || address.trim() === '') {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  // Display success message and clear form
+  alert('Order placed successfully!');
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('address').value = '';
+}
+
+// Add event listener to the form
+const form = document.querySelector('form');
+form.addEventListener('submit', handleFormSubmit);
+
+  </script>
+</body>
+</html>
